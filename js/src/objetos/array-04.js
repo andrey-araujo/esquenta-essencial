@@ -10,3 +10,6 @@ const maisBaratos = produtos.filter((produto) => produto.preco < 100);
 
 console.log('Produtos com preço menor que 100 reais:');
 console.log(maisBaratos);
+maisBaratos.forEach((produto) => {
+    console.log(`Nome: ${produto.nome} , Preço: R$${produto.preco.toFixed(2)}`);
+});

@@ -1,24 +1,24 @@
-function esperarPor(segundos) {
+function awaitFor(seconds) {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve();
-        }, segundos * 1000);
+        }, seconds * 1000);
     });
 }
 
-async function executar() {
+async function execute() {
     console.log('Início');
 
-    await esperarPor(2);
+    await awaitFor(2);
     console.log('Depois de 2 segundos');
 
-    await esperarPor(3);
+    await awaitFor(3);
     console.log('Depois de 3 segundos');
 
-    await esperarPor(5);
+    await awaitFor(5);
     console.log('Depois de 5 segundos');
 
     console.log('Fim');
 }
 
-executar();
+execute();

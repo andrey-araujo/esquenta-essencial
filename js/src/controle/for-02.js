@@ -9,6 +9,7 @@ const item = { nome: 'Camisa', quantidade: 2, preco: 50.0 };
 console.log('Objeto:', item);
 
 // Exercício FOR
+// Lista de objetos
 const carrinho = [
     { nome: 'Camisa', quantidade: 2, preco: 50.0 },
     { nome: 'Calça', quantidade: 1, preco: 120.0 },

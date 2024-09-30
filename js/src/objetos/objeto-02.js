@@ -8,6 +8,7 @@ const livro = {
     publicado: true,
     anoPublicacao: 1954,
     generoPrincipal: function () {
+        //this é usado para acessar os dados do objeto
         return this.generos[0];
     },
 };

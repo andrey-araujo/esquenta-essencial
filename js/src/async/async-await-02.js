@@ -1,11 +1,11 @@
-async function fatosDoChuckNorris() {
-    const resp = await fetch('https://api.chucknorris.io/jokes/random');
-    const data = await resp.json();
+async function chuckNorrisFacts() {
+    const response = await fetch('https://api.chucknorris.io/jokes/random');
+    const data = await response.json();
     return data.value;
 }
 
-const fato1 = fatosDoChuckNorris();
-const fato2 = fatosDoChuckNorris();
-const fato3 = fatosDoChuckNorris();
+const fact1 = chuckNorrisFacts();
+const fact2 = chuckNorrisFacts();
+const fact3 = chuckNorrisFacts();
 
-Promise.all([fato1, fato2, fato3]).then(console.log);
+Promise.all([fact1, fact2, fact3]).then(console.log);

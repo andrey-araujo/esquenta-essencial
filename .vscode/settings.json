@@ -1,5 +1,5 @@
 {
-    "code-runner.executorMap": {
-        "typescript": "npx ts-node"
-    }
+  "code-runner.executorMap": {
+    "typescript": "npx ts-node"
+  }
 }

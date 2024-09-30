@@ -1,14 +1,14 @@
-function executarTudo(...funcoes) {
-    for (let funcao of funcoes) {
-        funcao();
+function execAll(...functions) {
+    for (let fun of functions) {
+        fun();
     }
 }
 
-const bomDia = () => console.log('Bom dia!');
-const boaTarde = () => console.log('Boa tarde!');
+const goodMorning = () => console.log('Good morning!');
+const goodAfternoon = () => console.log('Good afternoon!');
 
-function boaNoite() {
-    console.log('Boa noite!');
+function goodNight() {
+    console.log('Good night!');
 }
 
-executarTudo(bomDia, boaTarde, boaNoite);
+execAll(goodMorning, goodAfternoon, goodNight);
